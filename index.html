@@ -2,69 +2,45 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap');
+  <style>
+    .outer {
+      display: table;
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+    }
 
+    .middle {
+      display: table-cell;
+      vertical-align: middle;
+    }
 
-        body {
-            font-family: 'Inter Tight', sans-serif;
-            /* overflow: hidden; */
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            display: flex;
-            justify-content: center;
-            /*centers items on the line (the x-axis by default)*/
-            align-items: center;
-            /*centers items on the cross-axis (y by default)*/
-            transform: scale(1);
-        }
-
-
-
-        .center {
-            width: auto;
-        }
-
-        .row {
-            display: flex;
-        }
-
-        .column {
-            flex: 25%;
-            /* padding: 5px; */
-        }
-    </style>
+    .inner {
+      margin-left: auto;
+      margin-right: auto;
+      width: 100%;
+      transform: scale(2.5)
+      /* Whatever width you want */
+    }
+  </style>
 </head>
 
 <body>
-    <div class="center">
-        <h2 class="homehx-h3h2" style="text-align: center;">Certifications, Credentials, and Affiliations</h2>
-        <p style="text-align: center;">Our certifications, credentials, and partnerships are part of why we’re the
-            right choice for turning your managed infrastructure into a strategic asset.</p>
 
-        <div class="row">
-            <div class="column">
-                <img src="https://www.sagiss.com/hs-fs/hubfs/1_footer%20logo_aaa@2x.png?width=100">
-            </div>
-            <div class="column">
-                <img src="https://www.sagiss.com/hs-fs/hubfs/1_Microsoft%20Solutions%20Partner%20logo@2x.png?width=200">
-            </div>
-            <div class="column">
-                <img src="https://www.sagiss.com/hs-fs/hubfs/1_footer%20logo_AICPA@2x.png?width=100">
-            </div>
-            <div class="column">
-                <img src="https://www.sagiss.com/hs-fs/hubfs/1_MSP%20logo@2x.png?width=200&height=400">
-            </div>
-        </div>
-
-
+  <div class="outer">
+    <div class="middle">
+      <div class="inner">
         <script
-            id="smileback-widget">if (!sbWidgetSettings) var sbWidgetSettings = {}; sbWidgetSettings = { snippetVersion: "v4.0", backgroundColor: "[[backgroundColor]]", scoreColor: "#f7761f", textColor01: "#0397d6", widgetType: "reviewsWidget", widgetStyle: "", border: "no", dropShadow: "yes", lang: "en", showAuthor: "true", showCompany: "true", showDate: "", scrollType: "autoScroll", includeCSAT: "true", includeNPS: "", app: "7aa86ae07aab466c9eaee5a0a95417ef", }; (function (d, s, sid) { var js, ip = d.getElementsByTagName(s)[0]; if (d.getElementById(sid)) return; js = d.createElement(s); js.id = sid; js.src = "https://d2ybfz51gt58l0.cloudfront.net/configuration/widget/script/v4/widget.js?widgetType=reviewsWidget&includeCSAT=true&includeNPS="; ip.parentNode.insertBefore(js, ip); }(document, "script", "smileback-widget-loader"));</script>
+          id="smileback-widget">if (!sbWidgetSettings) var sbWidgetSettings = {}; sbWidgetSettings = { snippetVersion: "v4.0", backgroundColor: "[[backgroundColor]]", scoreColor: "#f7761f", textColor01: "#0397d6", widgetType: "reviewsWidget", widgetStyle: "", border: "no", dropShadow: "yes", lang: "en", showAuthor: "true", showCompany: "true", showDate: "", scrollType: "autoScroll", includeCSAT: "true", includeNPS: "", app: "7aa86ae07aab466c9eaee5a0a95417ef", }; (function (d, s, sid) { var js, ip = d.getElementsByTagName(s)[0]; if (d.getElementById(sid)) return; js = d.createElement(s); js.id = sid; js.src = "https://d2ybfz51gt58l0.cloudfront.net/configuration/widget/script/v4/widget.js?widgetType=reviewsWidget&includeCSAT=true&includeNPS="; ip.parentNode.insertBefore(js, ip); }(document, "script", "smileback-widget-loader"));</script>
+      </div>
     </div>
+  </div>
+
 
 </body>
 
