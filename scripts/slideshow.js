@@ -1,15 +1,15 @@
 const images = [
-  "image1.jpg",
-  "image2.jpg",
-  "image3.jpg",
-  "image4.jpg",
-  "image5.jpg",
-  "image6.jpg",
-  "image7.jpg",
-  "image8.jpg",
-  "image9.jpg",
-  "image10.jpg",
-  "image11.jpg",
+  "images/image1.jpg",
+  "images/image2.jpg",
+  "images/image3.jpg",
+  "images/image4.jpg",
+  "images/image5.jpg",
+  "images/image6.jpg",
+  "images/image7.jpg",
+  "images/image8.jpg",
+  "images/image9.jpg",
+  "images/image10.jpg",
+  "images/image11.jpg",
 ];
 
 let currentImageIndex = 0;
@@ -51,31 +51,5 @@ function changeImage() {
 
 // Start slideshow when page loads
 window.addEventListener("load", () => {
-  setInterval(changeImage, 5000); // Change image every 5 seconds
+  setInterval(changeImage, 10000); // Change image every 10 seconds
 });
-
-// Date widget functionality
-function updateDateTime() {
-  const now = new Date();
-
-  const dateOptions = {
-    weekday: "short",
-    day: "numeric",
-  };
-
-  const timeOptions = {
-    hour: "2-digit",
-    minute: "2-digit",
-    hour12: true,
-  };
-
-  const currentDate = now.toLocaleDateString("en-US", dateOptions);
-  const currentTime = now.toLocaleTimeString("en-US", timeOptions);
-
-  document.getElementById("current-date").textContent = currentDate;
-  document.getElementById("current-time").textContent = currentTime;
-}
-
-// Update date and time immediately and then every second
-updateDateTime();
-setInterval(updateDateTime, 1000);

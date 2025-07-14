@@ -19,6 +19,6 @@ function updateDateTime() {
   document.getElementById("current-time").textContent = currentTime;
 }
 
-// Update date and time immediately and then every second
+// Update date and time immediately and then every minute
 updateDateTime();
-setInterval(updateDateTime, 1000);
+setInterval(updateDateTime, 60000);
