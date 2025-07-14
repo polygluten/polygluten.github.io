@@ -1,0 +1,29 @@
+if (!sbWidgetSettings) var sbWidgetSettings = {};
+sbWidgetSettings = {
+  snippetVersion: "v4.0",
+  backgroundColor: "[[backgroundColor]]",
+  scoreColor: "#f7761f",
+  textColor01: "#00054d",
+  widgetType: "reviewsWidget",
+  widgetStyle: "",
+  border: "no",
+  dropShadow: "yes",
+  lang: "en",
+  showAuthor: "true",
+  showCompany: "true",
+  showDate: "true",
+  scrollType: "autoScroll",
+  includeCSAT: "true",
+  includeNPS: "",
+  app: "7aa86ae07aab466c9eaee5a0a95417ef",
+};
+(function (d, s, sid) {
+  var js,
+    ip = d.getElementsByTagName(s)[0];
+  if (d.getElementById(sid)) return;
+  js = d.createElement(s);
+  js.id = sid;
+  js.src =
+    "https://d2ybfz51gt58l0.cloudfront.net/configuration/widget/script/v4/widget.js?widgetType=reviewsWidget&includeCSAT=true&includeNPS=";
+  ip.parentNode.insertBefore(js, ip);
+})(document, "script", "smileback-widget-loader");

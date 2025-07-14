@@ -4,50 +4,44 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <style>
-    .outer {
-      display: table;
-      position: absolute;
-      top: 0;
-      left: 0;
-      height: 100%;
-      width: 100%;
-    }
-
-    .middle {
-      display: table-cell;
-      vertical-align: middle;
-    }
-
-    .inner {
-      margin-left: 14%;
-      margin-right: auto;
-      margin-top: 40%;
-      width: 15%;
-      transform: scale(3)
-    }
-
-    .container {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      border: 2px dotted rgb(96 139 168);
-    }
-  </style>
+  <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-  <div class="outer">
-    <div class="middle">
-      <div class="inner">
-        
-        
+  <div class="widget-container">
+    <script id="smileback-widget" src="smileback.js"></script>
+  </div>
 
-          <!-- Begin SmileBack Website Widget v4.0 --><script id="smileback-widget">if(!sbWidgetSettings) var sbWidgetSettings = {};sbWidgetSettings = { snippetVersion: "v4.0", backgroundColor: "[[backgroundColor]]", scoreColor: "#9d3aff", textColor01: "#00054d", widgetType: "reviewsWidget", widgetStyle: "", border: "no", dropShadow: "yes", lang: "en", showAuthor: "true", showCompany: "true", showDate: "true", scrollType: "autoScroll", includeCSAT: "true", includeNPS: "", app: "7aa86ae07aab466c9eaee5a0a95417ef",};(function(d, s, sid) {var js, ip = d.getElementsByTagName(s)[0];if (d.getElementById(sid)) return;js = d.createElement(s);js.id = sid;js.src = "https://d2ybfz51gt58l0.cloudfront.net/configuration/widget/script/v4/widget.js?widgetType=reviewsWidget&includeCSAT=true&includeNPS=";ip.parentNode.insertBefore(js, ip);}(document, "script", "smileback-widget-loader"));</script><!-- End SmileBack Website Widget --->
-      </div>
+  <div class="date-widget">
+    <div class="current-date" id="current-date">Loading date...</div>
+  </div>
+
+  <div class="time-widget">
+    <div class="current-time" id="current-time">Loading time...</div>
+  </div>
+
+  <div class="slideshow-panel">
+    <img id="slideshow-image" src="image1.jpg" alt="Slideshow" />
+  </div>
+
+  <!-- Credit to https://codepen.io/kathykato/pen/EXxZdv -->
+  <div class="clock">
+  <div class="outer-clock-face">
+    <div class="marking marking-one"></div>
+    <div class="marking marking-two"></div>
+    <div class="marking marking-three"></div>
+    <div class="marking marking-four"></div>
+    <div class="inner-clock-face">
+      <div class="hand hour-hand"></div>
+      <div class="hand min-hand"></div>
+      <div class="hand second-hand"></div>
     </div>
   </div>
+</div>
+
+<script src="clock.js"></script>
+<script src="slideshow.js"></script>
+
 </body>
 
 </html>
