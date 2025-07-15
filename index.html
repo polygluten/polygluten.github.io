@@ -1,37 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      height: 100vh;
-      position: relative;
-    }
-
-    .wc {
-      position: absolute;
-      bottom: 0px;
-      left: 10px;
-      width: 350px;
-      transform: scale(3);
-      transform-origin: bottom left;
-    }
-  </style>
-</head>
-
-<body>
-  <div class="wc">
-    <!-- Begin SmileBack Website Widget v4.0 --><script id="smileback-widget">if(!sbWidgetSettings) var sbWidgetSettings = {};sbWidgetSettings = { snippetVersion: "v4.0", backgroundColor: "[[backgroundColor]]", scoreColor: "#9d3aff", textColor01: "#00054d", widgetType: "reviewsWidget", widgetStyle: "", border: "no", dropShadow: "yes", lang: "en", showAuthor: "true", showCompany: "true", showDate: "true", scrollType: "autoScroll", includeCSAT: "true", includeNPS: "", app: "7aa86ae07aab466c9eaee5a0a95417ef",};(function(d, s, sid) {var js, ip = d.getElementsByTagName(s)[0];if (d.getElementById(sid)) return;js = d.createElement(s);js.id = sid;js.src = "https://d2ybfz51gt58l0.cloudfront.net/configuration/widget/script/v4/widget.js?widgetType=reviewsWidget&includeCSAT=true&includeNPS=";ip.parentNode.insertBefore(js, ip);}(document, "script", "smileback-widget-loader"));</script><!-- End SmileBack Website Widget --->
-  </div>
-</body>
-
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: radial-gradient(
+    circle,
+    #f7761f 0%,
+    #0397d6 100%
+  );
+  height: 100vh;
+  position: relative;
+}
+.reviews-widget-container {
+  position: absolute;
+  top: 50em;
+  left: 100em;
+  width: 35em;
+  transform: scale(6);
+  transform-origin: center center;
+}
+    </style>
+  </head>
+  <body>
+    <div class="reviews-widget-container">
+      <script id="smileback-widget">if(!sbWidgetSettings)var sbWidgetSettings={};sbWidgetSettings={snippetVersion:"v4.0",backgroundColor:"[[backgroundColor]]",scoreColor:"#f7761f",textColor01:"#00054d",widgetType:"reviewsWidget",widgetStyle:"",border:"no",dropShadow:"yes",lang:"en",showAuthor:"true",showCompany:"true",showDate:"true",scrollType:"autoScroll",includeCSAT:"true",includeNPS:"",app:"7aa86ae07aab466c9eaee5a0a95417ef"},function(e,t,o){var r,i=e.getElementsByTagName(t)[0];e.getElementById(o)||((r=e.createElement(t)).id=o,r.src="https://d2ybfz51gt58l0.cloudfront.net/configuration/widget/script/v4/widget.js?widgetType=reviewsWidget&includeCSAT=true&includeNPS=",i.parentNode.insertBefore(r,i))}(document,"script","smileback-widget-loader");</script>
+    </div>
+  </body>
 </html>
